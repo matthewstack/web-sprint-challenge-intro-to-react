@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
+import Character from "./components/Character"
 import './App.css';
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+      <Character characters={characters} />
     </div>
   );
 }
